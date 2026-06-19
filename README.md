@@ -22,9 +22,9 @@ Almacenar registros por medio de localStorage
 El usuario tiene la posibilidad de realizar búsquedas, escoger filtros, crear formularios y obtener información para facilitar la participación en iniciativas ambientales.
 Entre los ejemplos de la información a visualizar está el tipo de árbol, tipo de bosque, lugar, descripción de la zona afectada y problemática principal, así como la posible solución, ya que puede ser de forma física, económica, entre otras.
 
-#Páginas desarrolladas:
+# Páginas desarrolladas:
 
-#Página de Inicio
+# Página de Inicio
 Esta página se encargará de mostrar la información general sobre la problemática de la deforestación en Costa Rica y la importancia de la reforestación para la conservación del medio ambiente en el país.
 Contenidos de la página
 Banner principal con información introductoria.
@@ -32,8 +32,8 @@ Menú con botones de navegación para las demás secciones del sitio
 Estadísticas sobre la pérdida forestal.
 Información sobre el objetivo principal de WoodNation.
 El usuario tendrá la posibilidad de conocer el propósito del proyecto, y acceder fácilmente a las funcionalidades principales.
-#Página de Solución Interactiva
 
+# Página de Solución Interactiva
 Esta página contendrá información dinámica cargada desde un archivo JSON.
 Contenidos de la página
 Lista de especies necesarias para reforestación (dependiendo de la zona afectada).
@@ -41,8 +41,8 @@ Información de zonas afectadas.
 Información general y específica de cada especie.
 Beneficios ambientales que ofrece cada especie de árbol.
 El usuario podrá buscar, filtrar y buscar información de cada especie por tipo o región, para poder consultar información más detallada de cada elemento.
-#Página de Registro
 
+# Página de Registro
 Esta página tiene como propósito el manejo de formularios, los cuales permitirán registrar compromisos o actividades de reforestación por parte de los usuarios
 El formulario solicitará información de los participantes, como su nombre, provincia en la que reside, contribución realizada, fecha, entre otros datos importantes.
 Asimismo, este apartado contendrá las posibles contribuciones que los usuarios pueden realizar y/o participar.
