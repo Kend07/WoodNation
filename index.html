@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<!-- lang="es" indica que el contenido está en español -->
+<html lang="es">
 
+<head>
+  <!-- charset: permite usar tildes y la ñ sin problemas -->
+  <meta charset="UTF-8">
+  <!-- viewport: hace que la página se adapte a celulares y tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título que aparece en la pestaña del navegador -->
+  <title>WoodNation | Inicio</title>
+  <!-- Conexión con el archivo de estilos (carpeta css) -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
+  <!-- Aparece igual en las 3 páginas. Los enlaces llevan a las-->
+  <!-- otras secciones del sitio.-->
+
+  <header class="encabezado">
+    <!-- Nombre o logo del sitio -->
+    <div class="logo">WoodNation</div>
+
+    <!-- nav = barra de navegación -->
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="solucion.html">Especies y Zonas</a>
+      <a href="registro.html">Registro</a>
+    </nav>
+  </header>
+
+  
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- main = el contenido más importante de la página -->
+
+  <main>
+
+    <!-- ---------- BANNER / SECCIÓN INTRODUCTORIA ---------- -->
+    <section class="banner">
+      <h1>Unidos por los bosques de Costa Rica</h1>
+      <p>
+        <!-- TODO: texto introductorio breve. Pueden resumir el objetivo
+             de WoodNation en 2 o 3 líneas. -->
+        WoodNation informa sobre la deforestación en Costa Rica y te invita
+        a participar en la reforestación del país.
+      </p>
+      <!-- Botón que lleva a la página interactiva -->
+      <a href="solucion.html" class="boton">Conocer las especies</a>
+    </section>
+
+    <!-- ---------- ESTADÍSTICAS SOBRE LA PÉRDIDA FORESTAL ---------- -->
+    <section class="estadisticas">
+      <h2>La situación en cifras</h2>
+
+      <!-- Cada "tarjeta" es un dato. hay que remplazar los números y textos
+           por la información del documento. -->
+      <div class="tarjetas">
+
+        <div class="tarjeta">
+          <span class="numero">21%</span>
+          <p>Cobertura forestal en 1987, su punto más bajo.</p>
+        </div>
+
+        <div class="tarjeta">
+          <span class="numero">57%</span>
+          <p>Cobertura forestal aproximada en la actualidad.</p>
+        </div>
+
+        <div class="tarjeta">
+          <span class="numero">35%</span>
+          <p>De las denuncias ambientales son por tala ilegal.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---------- OBJETIVO DE WOODNATION ---------- -->
+    <section class="objetivo">
+      <h2>¿Qué es WoodNation?</h2>
+      <p>
+        <!-- TODO: explica el propósito del proyecto. -->
+        WoodNation es una plataforma web que reúne información sobre las zonas
+        afectadas por la deforestación y las especies de árboles en riesgo, y
+        que facilita la participación ciudadana en campañas de reforestación.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+
+  <footer class="pie">
+    <p>WoodNation &copy; 2026 — Proyecto ISW-521, Universidad Técnica Nacional</p>
+  </footer>
+
+
+</body>
+
+</html>
