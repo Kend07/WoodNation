@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WoodNation | Inscripción</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">WoodNation</a>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="problematicas.html">Problemáticas</a>
+      <a href="especies.html">Especies</a>
+      <a href="inscripcionUsuarios.html">Inscripción</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" data-aos="fade-up">
+      <h2>Formulario de inscripción</h2>
+      <p class="subtitle" id="subtitulo-form">
+        Regístrate para participar en iniciativas de reforestación.
+      </p>
+
+      <div class="form-preview">
+        <div class="form-left">
+          <form id="form-inscripcion" class="form">
+            <div class="space">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" required>
+            </div>
+
+            <div class="space">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" required>
+            </div>
+
+            <div class="space">
+              <label for="provincia">Provincia</label>
+              <select id="provincia" required>
+                <option value="">Seleccione una provincia</option>
+                <option>San José</option>
+                <option>Alajuela</option>
+                <option>Cartago</option>
+                <option>Heredia</option>
+                <option>Guanacaste</option>
+                <option>Puntarenas</option>
+                <option>Limón</option>
+              </select>
+            </div>
+
+            <div class="space">
+              <label for="problematica">Problemática de interés</label>
+              <select id="problematica" required>
+                <option value="">Seleccione una problemática</option>
+              </select>
+            </div>
+
+            <div class="space">
+              <label for="contribucion">Tipo de contribución</label>
+              <select id="contribucion" required>
+                <option value="">Seleccione un tipo</option>
+                <option>Voluntariado en reforestación</option>
+                <option>Donación económica</option>
+                <option>Donación de herramientas/plantas</option>
+                <option>Difusión y educación ambiental</option>
+                <option>Transporte y logística</option>
+              </select>
+            </div>
+
+            <div class="space">
+              <label for="fecha">Fecha disponible</label>
+              <input type="date" id="fecha" required>
+            </div>
+
+            <div class="space">
+              <label for="comentario">Comentario adicional (opcional)</label>
+              <textarea id="comentario" rows="3"></textarea>
+            </div>
+
+            <div class="center">
+              <button type="submit" class="btn">Registrar inscripción</button>
+            </div>
+          </form>
+        </div>
+        <div class="preview-right" id="preview-card">
+          <div class="preview-placeholder">Seleccione una problemática</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-background" data-aos="fade-up">
+      <h2>Mis inscripciones</h2>
+      <div id="contenedor-registros">
+        <p class="empty">No hay inscripciones registradas aún.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>WoodNation &copy; 2026 — Proyecto ISW-521, Universidad Técnica Nacional</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 800 });</script>
+  <script src="js/inscripcion.js"></script>
+</body>
+</html>

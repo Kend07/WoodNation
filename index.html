@@ -1,101 +1,126 @@
 <!DOCTYPE html>
-<!-- lang="es" indica que el contenido está en español -->
 <html lang="es">
-
 <head>
-  <!-- charset: permite usar tildes y la ñ sin problemas -->
   <meta charset="UTF-8">
-  <!-- viewport: hace que la página se adapte a celulares y tablets -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Título que aparece en la pestaña del navegador -->
   <title>WoodNation | Inicio</title>
-  <!-- Conexión con el archivo de estilos (carpeta css) -->
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
-  <!-- Aparece igual en las 3 páginas. Los enlaces llevan a las-->
-  <!-- otras secciones del sitio.-->
-
-  <header class="encabezado">
-    <!-- Nombre o logo del sitio -->
-    <div class="logo">WoodNation</div>
-
-    <!-- nav = barra de navegación -->
+  <header class="header">
+    <a href="index.html" class="logo">WoodNation</a>
     <nav class="menu">
       <a href="index.html">Inicio</a>
-      <a href="solucion.html">Especies y Zonas</a>
-      <a href="registro.html">Registro</a>
+      <a href="problematicas.html">Problemáticas</a>
+      <a href="especies.html">Especies</a>
+      <a href="inscripcionUsuarios.html">Inscripción</a>
     </nav>
   </header>
 
-  
-  <!-- CONTENIDO PRINCIPAL -->
-  <!-- main = el contenido más importante de la página -->
-
   <main>
 
-    <!-- ---------- BANNER / SECCIÓN INTRODUCTORIA ---------- -->
-    <section class="banner">
+    <section class="banner" data-aos="fade-up">
       <h1>Unidos por los bosques de Costa Rica</h1>
       <p>
-        <!-- TODO: texto introductorio breve. Pueden resumir el objetivo
-             de WoodNation en 2 o 3 líneas. -->
         WoodNation informa sobre la deforestación en Costa Rica y te invita
-        a participar en la reforestación del país.
+        a participar activamente en la reforestación nacional.
       </p>
-      <!-- Botón que lleva a la página interactiva -->
-      <a href="solucion.html" class="boton">Conocer las especies</a>
+      <a href="problematicas.html" class="btn">Conocer las problemáticas</a>
     </section>
 
-    <!-- ---------- ESTADÍSTICAS SOBRE LA PÉRDIDA FORESTAL ---------- -->
-    <section class="estadisticas">
-      <h2>La situación en cifras</h2>
-
-      <!-- Cada "tarjeta" es un dato. hay que remplazar los números y textos
-           por la información del documento. -->
-      <div class="tarjetas">
-
-        <div class="tarjeta">
-          <span class="numero">21%</span>
-          <p>Cobertura forestal en 1987, su punto más bajo.</p>
-        </div>
-
-        <div class="tarjeta">
-          <span class="numero">57%</span>
-          <p>Cobertura forestal aproximada en la actualidad.</p>
-        </div>
-
-        <div class="tarjeta">
-          <span class="numero">35%</span>
-          <p>De las denuncias ambientales son por tala ilegal.</p>
-        </div>
-
+    <section class="section" data-aos="fade-up">
+      <h2>La deforestación en Costa Rica</h2>
+      <div class="content-text">
+        <p>
+          Costa Rica perdió más del <strong>75% de su cobertura forestal original</strong>
+          entre las décadas de 1940 y 1980, alcanzando un mínimo histórico del 21% en 1987.
+          Actualmente la cobertura ronda el 57%, gracias a décadas de políticas de conservación,
+          pero la deforestación ilegal y la expansión agrícola continúan amenazando los bosques
+          remanentes.
+        </p>
+        <p>
+          Las principales causas de la deforestación en el país son: la <strong>tala ilegal</strong>
+          de especies maderables valiosas, la <strong>expansión de la frontera agrícola</strong>
+          (piña, caña de azúcar, palma aceitera, ganadería extensiva), los
+          <strong>incendios forestales</strong> intencionales y el
+          <strong>desarrollo urbano no planificado</strong>.
+        </p>
       </div>
     </section>
 
-    <!-- ---------- OBJETIVO DE WOODNATION ---------- -->
-    <section class="objetivo">
-      <h2>¿Qué es WoodNation?</h2>
-      <p>
-        <!-- TODO: explica el propósito del proyecto. -->
-        WoodNation es una plataforma web que reúne información sobre las zonas
-        afectadas por la deforestación y las especies de árboles en riesgo, y
-        que facilita la participación ciudadana en campañas de reforestación.
-      </p>
+    <section class="section light-background" data-aos="fade-up">
+      <h2>Zonas más afectadas</h2>
+      <div class="card">
+        <div class="cards" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Zona Norte</h3>
+          <p>Sarapiquí y San Carlos. Tala ilegal de cedro, caoba y cristóbal. Corredores biológicos fragmentados.</p>
+        </div>
+        <div class="cards" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Guanacaste</h3>
+          <p>Expansión agrícola y ganadera. Ha perdido el 65% del bosque seco tropical original.</p>
+        </div>
+        <div class="cards" data-aos="zoom-in" data-aos-delay="300">
+          <h3>Valle Central</h3>
+          <p>Crecimiento urbano descontrolado. Eliminación de bosque urbano y periurbano.</p>
+        </div>
+        <div class="cards" data-aos="zoom-in" data-aos-delay="400">
+          <h3>Zona Sur</h3>
+          <p>Osa y Golfito. Minería ilegal y turismo no regulado amenazan el bosque lluvioso.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-aos="fade-up">
+      <h2>Estadísticas clave</h2>
+      <div class="card">
+        <div class="cards" data-aos="flip-left">
+          <span class="number">21%</span>
+          <p>Cobertura forestal en 1987, el punto más bajo de la historia.</p>
+        </div>
+        <div class="cards" data-aos="flip-left" data-aos-delay="150">
+          <span class="number">57%</span>
+          <p>Cobertura forestal actual, una recuperación notable pero insuficiente.</p>
+        </div>
+        <div class="cards" data-aos="flip-left" data-aos-delay="300">
+          <span class="number">35%</span>
+          <p>De las denuncias ambientales en Costa Rica son por tala ilegal.</p>
+        </div>
+        <div class="cards" data-aos="flip-left" data-aos-delay="450">
+          <span class="number">25%</span>
+          <p>Del territorio está bajo alguna figura de protección o área silvestre.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-background" data-aos="fade-up">
+      <h2>Soluciones y cómo ayudar</h2>
+      <div class="content-text">
+        <p>
+          Costa Rica ha demostrado que es posible revertir la deforestación. Programas como el
+          <strong>Pago por Servicios Ambientales (PSA)</strong>, la creación de
+          <strong>Áreas Marinas de Uso Múltiple</strong> y el fortalecimiento del
+          <strong>SINAC</strong> han sido clave. Sin embargo, la participación ciudadana es fundamental.
+        </p>
+        <p>
+          Puedes contribuir participando en jornadas de reforestación, denunciando la tala ilegal,
+          apoyando el ecoturismo comunitario o registrándote en nuestra plataforma para unirte a
+          iniciativas locales en tu provincia.
+        </p>
+        <div class="center" style="margin-top: 24px;">
+          <a href="inscripcionUsuarios.html" class="btn">Inscribirme ahora</a>
+        </div>
+      </div>
     </section>
 
   </main>
 
-  <!-- PIE DE PÁGINA -->
-
-  <footer class="pie">
+  <footer class="footer">
     <p>WoodNation &copy; 2026 — Proyecto ISW-521, Universidad Técnica Nacional</p>
   </footer>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 800 });</script>
 </body>
-
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WoodNation | Problemáticas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">WoodNation</a>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="problematicas.html">Problemáticas</a>
+      <a href="especies.html">Especies</a>
+      <a href="inscripcionUsuarios.html">Inscripción</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" data-aos="fade-up">
+      <h2>Problemáticas de deforestación en Costa Rica</h2>
+      <p class="subtitle">
+        Las tarjeta representan las principales problemáticas presentes en el paíæ. Haz clic en
+        "Más información" para conocer mas detalles, o en "Inscripción" para inscribirte y apoyar.
+      </p>
+      <input type="text" id="search-problemas" class="search-input" placeholder="Buscar por nombre, zona, provincia, especie...">
+      <div id="contenedor-cards" class="card"></div>
+      <p id="no-results-problemas" class="empty hidden">No se encontraron problemáticas con ese filtro.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>WoodNation &copy; 2026 — Proyecto ISW-521, Universidad Técnica Nacional</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 800 });</script>
+  <script src="js/problematicas.js"></script>
+</body>
+</html>

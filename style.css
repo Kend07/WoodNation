@@ -1,16 +1,9 @@
-/* ============================================================
-   ESTILOS BASE DE WOODNATION
-   (Esto es solo para darnos un punto de inicio, como "por defecto")
-   ============================================================ */
-
-/* Reinicio básico: quita márgenes que el navegador pone por defecto */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* el padding no agranda los elementos */
+  box-sizing: border-box;
 }
 
-/* Estilos generales del cuerpo de la página */
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -18,36 +11,36 @@ body {
   background-color: #f5f7f2;
 }
 
-/* ---------- ENCABEZADO Y MENÚ ---------- */
-.encabezado {
-  display: flex;                 /* logo y menú en la misma fila */
-  justify-content: space-between;/* uno a cada extremo */
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
-  background-color: #1b4332;     /* verde oscuro */
+  background-color: #1b4332;
 }
 
-.logo {
+.logo,
+.logo a {
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .menu a {
   color: #ffffff;
-  text-decoration: none;         /* quita el subrayado de los enlaces */
+  text-decoration: none;
   margin-left: 24px;
 }
 
 .menu a:hover {
-  text-decoration: underline;    /* subraya al pasar el mouse */
+  text-decoration: underline;
 }
 
-/* ---------- BANNER ---------- */
 .banner {
   text-align: center;
   padding: 80px 24px;
-  background-color: #95d5b2;     /* verde claro */
+  background: linear-gradient(135deg, #95d5b2, #52b788);
 }
 
 .banner h1 {
@@ -57,42 +50,71 @@ body {
 
 .banner p {
   max-width: 600px;
-  margin: 0 auto 24px auto;      /* centra el párrafo */
+  margin: 0 auto 24px auto;
 }
 
-/* Botón reutilizable */
-.boton {
+.btn {
   display: inline-block;
   background-color: #1b4332;
   color: #ffffff;
   padding: 12px 28px;
   border-radius: 6px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-.boton:hover {
+.btn:hover {
   background-color: #2d6a4f;
 }
 
-/* ---------- SECCIONES ---------- */
-section {
+.section {
   padding: 60px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-section h2 {
+.section h2 {
   text-align: center;
   margin-bottom: 32px;
+  font-size: 1.8rem;
+  color: #1b4332;
 }
 
-/* ---------- TARJETAS DE ESTADÍSTICAS ---------- */
-.tarjetas {
-  display: flex;                 /* tarjetas en fila */
+.subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #2E2E2E;
+}
+
+.light-background {
+  background-color: #F5F7F2;
+  max-width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.content-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-text p {
+  margin-bottom: 16px;
+}
+
+.card {
+  display: flex;
   justify-content: center;
-  gap: 24px;                     /* espacio entre tarjetas */
-  flex-wrap: wrap;               /* se acomodan en celulares */
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.tarjeta {
+.cards {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 24px;
@@ -101,7 +123,13 @@ section h2 {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.numero {
+.card h3 {
+  color: #1b4332;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.number {
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
@@ -109,17 +137,210 @@ section h2 {
   margin-bottom: 8px;
 }
 
-/* ---------- OBJETIVO ---------- */
-.objetivo p {
-  max-width: 700px;
-  margin: 0 auto;
+.center {
   text-align: center;
 }
 
-/* ---------- PIE DE PÁGINA ---------- */
-.pie {
+.footer {
   text-align: center;
   padding: 24px;
   background-color: #1b4332;
   color: #ffffff;
+}
+
+.card-problem {
+  width: 300px;
+  text-align: left;
+  padding: 0 0 20px 0;
+  overflow: hidden;
+}
+
+.img-problem {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.card-problem h3 {
+  padding: 0 16px;
+  margin-bottom: 6px;
+}
+
+.card-problem .zone-label {
+  padding: 0 16px;
+  font-size: 0.9rem;
+}
+
+.card-problem p {
+  padding: 0 16px;
+  font-size: 0.9rem;
+}
+
+.specie-list {
+  padding: 0 32px;
+  margin: 6px 0 12px 0;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.specie-list li {
+  margin-bottom: 2px;
+}
+
+.actions {
+  padding: 0 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-info {
+  background-color: #2d6a4f;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+}
+
+.btn-insc {
+  background-color: #1b4332;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+}
+
+.btn-eliminar {
+  background-color: #E76F51;
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  white-space: nowrap;
+}
+
+.form-preview {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.form-left {
+  flex: 1;
+  max-width: 600px;
+  min-width: 0;
+}
+
+.preview-right {
+  flex: 1;
+  max-width: 350px;
+  position: sticky;
+  top: 24px;
+}
+
+.preview-placeholder {
+  background: #ffffff;
+  border: 2px dashed #95D5B2;
+  border-radius: 8px;
+  padding: 60px 24px;
+  text-align: center;
+  color: #2E2E2E;
+}
+
+.form {
+  max-width: 100%;
+}
+
+.space {
+  margin-bottom: 20px;
+}
+
+.space label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #1b4332;
+}
+
+.space input,
+.space select,
+.space textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #95D5B2;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.space textarea {
+  resize: vertical;
+}
+
+.table-registros {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.item-registro {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  gap: 12px;
+}
+
+.registro-info p {
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+}
+
+.comment {
+  font-style: italic;
+  color: #2E2E2E;
+}
+
+.preview-card {
+  width: 100% !important;
+  max-width: 350px;
+}
+
+.preview-card .specie-list {
+  margin-bottom: 8px;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 32px auto;
+  padding: 12px 16px;
+  border: 2px solid #95D5B2;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #ffffff;
+  color: #2E2E2E;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #52B788;
+}
+
+.search-input::-webkit-input-placeholder {
+  color: #95D5B2;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.empty {
+  text-align: center;
+  color: #2E2E2E;
+  padding: 24px;
 }

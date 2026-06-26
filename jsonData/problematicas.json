@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Tala Ilegal en la Zona Norte",
+    "zona": "Sarapiquí y San Carlos",
+    "provincia": "Heredia y Alajuela",
+    "descripcion": "La tala ilegal en la Zona Norte de Costa Rica ha reducido drásticamente los bosques primarios. Especies maderables de alto valor como el cedro amargo y la caoba son extraídas ilegalmente, fragmentando corredores biológicos vitales para jaguares, monos y aves migratorias.",
+    "causas": ["Falta de vigilancia en áreas remotas", "Demanda internacional de madera preciosa", "Carreteras no autorizadas que facilitan la extracción"],
+    "consecuencias": ["Pérdida de hábitat para especies en peligro", "Fragmentación del Corredor Biológico Mesoamericano", "Reducción del 30% de cobertura forestal primaria en 20 años"],
+    "soluciones": ["Reforestación con especies nativas en fincas privadas", "Fortalecimiento del Sistema de Áreas de Conservación (SINAC)", "Programas de educación comunitaria y vigilancia participativa"],
+    "especiesAfectadas": ["Cedro Amargo (Cedrela odorata)", "Caoba (Swietenia macrophylla)", "Cristóbal (Platymiscium pinnatum)", "Guayacán (Tabebuia guayacan)"],
+    "imagen": "assets/zonas/zona-norte.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Expansión Agrícola en Guanacaste",
+    "zona": "Guanacaste (Liberia, Bagaces, Cañas)",
+    "provincia": "Guanacaste",
+    "descripcion": "La expansión de monocultivos como piña, caña de azúcar y arroz, junto con la ganadería extensiva, ha provocado la pérdida de bosque seco tropical en Guanacaste. Esta es una de las regiones con mayor estrés hídrico del país.",
+    "causas": ["Monocultivos de exportación (piña, caña, arroz)", "Ganadería extensiva que requiere grandes extensiones de terreno", "Incendios forestales intencionales para limpieza de terrenos"],
+    "consecuencias": ["Pérdida del 65% del bosque seco tropical original", "Contaminación de mantos acuíferos por agroquímicos", "Desplazamiento de especies como el venado cola blanca y el mono congo"],
+    "soluciones": ["Sistemas silvopastoriles que integran árboles con ganadería", "Pago por Servicios Ambientales (PSA) para conservación", "Certificaciones de producción sostenible"],
+    "especiesAfectadas": ["Pochote (Bombacopsis quinata)", "Tempisque (Sideroxylon capiri)", "Guapinol (Hymenaea courbaril)", "Cocobolo (Dalbergia retusa)"],
+    "imagen": "assets/zonas/guanacaste.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Deforestación Urbana en el Valle Central",
+    "zona": "Valle Central (San José, Alajuela, Cartago, Heredia)",
+    "provincia": "San José, Alajuela, Cartago, Heredia",
+    "descripcion": "El crecimiento urbano descontrolado en el Valle Central ha eliminado miles de hectáreas de bosque urbano y periurbano. La expansión de condominios, carreteras y zonas industriales fragmenta los pocos remanentes de bosque en la región más poblada del país.",
+    "causas": ["Crecimiento urbano sin planificación territorial", "Construcción de infraestructura vial", "Especulación inmobiliaria en zonas de conservación municipal"],
+    "consecuencias": ["Aumento de la temperatura urbana (isla de calor)", "Pérdida de corredores biológicos interurbanos", "Reducción de la calidad del aire y aumento de enfermedades respiratorias"],
+    "soluciones": ["Creación de corredores biológicos urbanos", "Programas de arborización municipal con especies nativas", "Incentivos para techos verdes y jardines verticales"],
+    "especiesAfectadas": ["Roble Sabana (Tabebuia rosea)", "Cortez Negro (Tabebuia impetiginosa)", "Poro (Erythrina poeppigiana)", "Mango (Mangifera indica)"],
+    "imagen": "assets/zonas/valle-central.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Minería y Desarrollo en la Zona Sur",
+    "zona": "Golfito, Osa, Corredores",
+    "provincia": "Puntarenas",
+    "descripcion": "La minería ilegal de oro y los proyectos de infraestructura turística no regulados están degradando los bosques lluviosos de la Zona Sur. Esta región alberga algunos de los ecosistemas más biodiversos del planeta, incluyendo el Parque Nacional Corcovado.",
+    "causas": ["Minería de oro ilegal en cuencas de ríos", "Desarrollo turístico no regulado en zonas costeras", "Extracción de madera para cultivos ilegales"],
+    "consecuencias": ["Contaminación por mercurio en ríos y estuarios", "Destrucción de manglares y humedales costeros", "Pérdida de hábitat del jaguar, danta y lapas"],
+    "soluciones": ["Operativos contra la minería ilegal", "Ecoturismo comunitario como alternativa económica", "Restauración de manglares y cuencas hidrográficas"],
+    "especiesAfectadas": ["Gallinazo (Schizolobium parahyba)", "Gavilán (Pentaclethra macroloba)", "Sándalo (Myroxylon balsamum)", "Nazareno (Peltogyne purpurea)"],
+    "imagen": "assets/zonas/mineria-zona-sur.jpg"
+  }
+]
