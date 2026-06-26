@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header class="header">
@@ -27,7 +29,8 @@
         Listado de todas las especies de árboles afectadas por la deforestación en Costa Rica.
         Haz clic en "Más información" para mas detalles.
       </p>
-      <input type="text" id="search-especies" class="search-input" placeholder="Buscar por nombre común, científico, problemática, zona...">
+      <input type="text" id="search-especies" class="search-input"
+        placeholder="Buscar por nombre común, científico, problemática, zona...">
       <div id="contenedor-especies" class="card"></div>
       <p id="no-results-especies" class="empty hidden">No se encontraron especies con ese filtro.</p>
     </section>
@@ -43,4 +46,5 @@
   <script>AOS.init({ duration: 800 });</script>
   <script src="js/especies.js"></script>
 </body>
+
 </html>

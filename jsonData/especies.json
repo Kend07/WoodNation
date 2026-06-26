@@ -1,18 +1,242 @@
 [
-  { "id": 1, "nombreComun": "Cedro Amargo", "nombreCientifico": "Cedrela odorata", "problematica": "Tala Ilegal en la Zona Norte", "zona": "Sarapiquí y San Carlos", "descripcion": "Árbol de gran porte, puede alcanzar hasta 40 m de altura. Su madera es muy apreciada en la fabricación de muebles y carpintería fina. Se encuentra en peligro por sobreexplotación.", "usos": ["Madera fina para muebles", "Instrumentos musicales", "Carpintería en general"], "estado": "Vulnerable", "imagen": "assets/arboles/cedro-amargo.png" },
-  { "id": 2, "nombreComun": "Caoba", "nombreCientifico": "Swietenia macrophylla", "problematica": "Tala Ilegal en la Zona Norte", "zona": "Sarapiquí y San Carlos", "descripcion": "Una de las maderas más valiosas del mundo. Su tala ilegal está severamente controlada, pero aún es víctima del tráfico de madera en la Zona Norte.", "usos": ["Muebles de lujo", "Ebanistería", "Construcción naval"], "estado": "En peligro", "imagen": "assets/arboles/caoba.jpg" },
-  { "id": 3, "nombreComun": "Cristóbal", "nombreCientifico": "Platymiscium pinnatum", "problematica": "Tala Ilegal en la Zona Norte", "zona": "Sarapiquí y San Carlos", "descripcion": "Árbol de madera dura y densa, utilizada en la fabricación de mangos de herramientas, artesanías y construcción. Su tala ilegal ha reducido significativamente sus poblaciones.", "usos": ["Mangos de herramientas", "Artesanías", "Construcción rural"], "estado": "Vulnerable", "imagen": "assets/arboles/cristobal.jpg" },
-  { "id": 4, "nombreComun": "Guayacán", "nombreCientifico": "Tabebuia guayacan", "problematica": "Tala Ilegal en la Zona Norte", "zona": "Sarapiquí y San Carlos", "descripcion": "Árbol de madera extremadamente dura y resistente a la intemperie. Su floración amarilla es característica.", "usos": ["Postes y durmientes", "Construcción pesada", "Tornillos y ruedas hidráulicas"], "estado": "Casi amenazado", "imagen": "assets/arboles/guayacan.jpg" },
-  { "id": 5, "nombreComun": "Pochote", "nombreCientifico": "Bombacopsis quinata", "problematica": "Expansión Agrícola en Guanacaste", "zona": "Guanacaste", "descripcion": "Árbol característico del bosque seco tropical, de tronco espinoso y madera liviana pero resistente.", "usos": ["Madera liviana para carpintería", "Cajas y embalajes", "Fósforos"], "estado": "Vulnerable", "imagen": "assets/arboles/pochote.jpg" },
-  { "id": 6, "nombreComun": "Tempisque", "nombreCientifico": "Sideroxylon capiri", "problematica": "Expansión Agrícola en Guanacaste", "zona": "Guanacaste", "descripcion": "Árbol de madera extremadamente dura y pesada, utilizada históricamente para ruedas de carretas y construcciones.", "usos": ["Ruedas de carreta", "Construcción pesada", "Leña de alta calidad"], "estado": "En peligro", "imagen": "assets/arboles/tempisque.jpg" },
-  { "id": 7, "nombreComun": "Guapinol", "nombreCientifico": "Hymenaea courbaril", "problematica": "Expansión Agrícola en Guanacaste", "zona": "Guanacaste", "descripcion": "Árbol imponente del bosque seco, produce una resina llamada 'copal' utilizada desde tiempos precolombinos.", "usos": ["Construcción pesada", "Muebles rústicos", "Resina (copal) para barnices"], "estado": "Vulnerable", "imagen": "assets/arboles/guapinol.jpg" },
-  { "id": 8, "nombreComun": "Cocobolo", "nombreCientifico": "Dalbergia retusa", "problematica": "Expansión Agrícola en Guanacaste", "zona": "Guanacaste", "descripcion": "Árbol de madera preciosa de color rojizo con vetas oscuras. Es una de las maderas más cotizadas del mundo.", "usos": ["Artesanía fina", "Mangos de cuchillería", "Instrumentos musicales (marimbas)"], "estado": "En peligro crítico", "imagen": "assets/arboles/cocobolo.jpg" },
-  { "id": 9, "nombreComun": "Roble Sabana", "nombreCientifico": "Tabebuia rosea", "problematica": "Deforestación Urbana en el Valle Central", "zona": "Valle Central", "descripcion": "Árbol de hermosas flores rosadas, muy utilizado en la arborización urbana del Valle Central.", "usos": ["Arborización urbana", "Madera para muebles", "Sombrío en potreros"], "estado": "Casi amenazado", "imagen": "assets/arboles/roble-sabana.jpg" },
-  { "id": 10, "nombreComun": "Cortez Negro", "nombreCientifico": "Tabebuia impetiginosa", "problematica": "Deforestación Urbana en el Valle Central", "zona": "Valle Central", "descripcion": "Árbol de flores rosado-moradas y madera muy durable, característico de los bosques del Valle Central.", "usos": ["Madera para construcción", "Postes", "Arborización ornamental"], "estado": "Vulnerable", "imagen": "assets/arboles/cortez-negro.jpg" },
-  { "id": 11, "nombreComun": "Poro", "nombreCientifico": "Erythrina poeppigiana", "problematica": "Deforestación Urbana en el Valle Central", "zona": "Valle Central", "descripcion": "Árbol de flores rojas intensas, utilizado tradicionalmente como sombra en cafetales y sistemas agroforestales.", "usos": ["Sombra para cafetales", "Cercas vivas", "Ornato urbano"], "estado": "Preocupación menor", "imagen": "assets/arboles/poro.jpg" },
-  { "id": 12, "nombreComun": "Mango", "nombreCientifico": "Mangifera indica", "problematica": "Deforestación Urbana en el Valle Central", "zona": "Valle Central", "descripcion": "Árbol frutal introducido, ampliamente cultivado en Costa Rica. Forma parte del paisaje del Valle Central.", "usos": ["Fruta", "Sombra", "Madera para embalajes"], "estado": "No amenazado", "imagen": "assets/arboles/mango.jpg" },
-  { "id": 13, "nombreComun": "Gallinazo", "nombreCientifico": "Schizolobium parahyba", "problematica": "Minería y Desarrollo en la Zona Sur", "zona": "Golfito, Osa, Corredores", "descripcion": "Árbol de crecimiento muy rápido, usado en reforestación. La minería ilegal afecta sus poblaciones en Osa.", "usos": ["Reforestación", "Madera para palillos", "Pulpa de papel"], "estado": "Preocupación menor", "imagen": "assets/arboles/gallinazo.jpg" },
-  { "id": 14, "nombreComun": "Gavilán", "nombreCientifico": "Pentaclethra macroloba", "problematica": "Minería y Desarrollo en la Zona Sur", "zona": "Golfito, Osa, Corredores", "descripcion": "Árbol muy abundante en los bosques lluviosos de Osa. La minería ilegal ha contaminado los ríos donde crece.", "usos": ["Construcción rural", "Leña", "Postes"], "estado": "Preocupación menor", "imagen": "assets/arboles/gavilan.webp" },
-  { "id": 15, "nombreComun": "Sándalo", "nombreCientifico": "Myroxylon balsamum", "problematica": "Minería y Desarrollo en la Zona Sur", "zona": "Golfito, Osa, Corredores", "descripcion": "Árbol de madera aromática, utilizado en perfumería y medicina tradicional. En riesgo por minería ilegal.", "usos": ["Perfumería", "Medicina tradicional", "Madera fina"], "estado": "Vulnerable", "imagen": "assets/arboles/sandalo.jpg" },
-  { "id": 16, "nombreComun": "Nazareno", "nombreCientifico": "Peltogyne purpurea", "problematica": "Minería y Desarrollo en la Zona Sur", "zona": "Golfito, Osa, Corredores", "descripcion": "Árbol de madera morada, una de las más hermosas del mundo. Objetivo de tala ilegal en la Península de Osa.", "usos": ["Artesanía fina", "Ebanistería de lujo", "Instrumentos musicales"], "estado": "En peligro crítico", "imagen": "assets/arboles/nazareno.jpg" }
+  {
+    "id": 1,
+    "nombreComun": "Cedro Amargo",
+    "nombreCientifico": "Cedrela odorata",
+    "problematica": "Tala Ilegal en la Zona Norte",
+    "zona": "Sarapiquí y San Carlos",
+    "descripcion": "Árbol de gran porte, puede alcanzar hasta 40 m de altura. Su madera es muy apreciada en la fabricación de muebles y carpintería fina. Se encuentra en peligro por sobreexplotación.",
+    "usos": [
+      "Madera fina para muebles",
+      "Instrumentos musicales",
+      "Carpintería en general"
+    ],
+    "estado": "Vulnerable",
+    "imagen": "assets/arboles/cedro-amargo.png"
+  },
+  {
+    "id": 2,
+    "nombreComun": "Caoba",
+    "nombreCientifico": "Swietenia macrophylla",
+    "problematica": "Tala Ilegal en la Zona Norte",
+    "zona": "Sarapiquí y San Carlos",
+    "descripcion": "Una de las maderas más valiosas del mundo. Su tala ilegal está severamente controlada, pero aún es víctima del tráfico de madera en la Zona Norte.",
+    "usos": [
+      "Muebles de lujo",
+      "Ebanistería",
+      "Construcción naval"
+    ],
+    "estado": "En peligro",
+    "imagen": "assets/arboles/caoba.jpg"
+  },
+  {
+    "id": 3,
+    "nombreComun": "Cristóbal",
+    "nombreCientifico": "Platymiscium pinnatum",
+    "problematica": "Tala Ilegal en la Zona Norte",
+    "zona": "Sarapiquí y San Carlos",
+    "descripcion": "Árbol de madera dura y densa, utilizada en la fabricación de mangos de herramientas, artesanías y construcción. Su tala ilegal ha reducido significativamente sus poblaciones.",
+    "usos": [
+      "Mangos de herramientas",
+      "Artesanías",
+      "Construcción rural"
+    ],
+    "estado": "Vulnerable",
+    "imagen": "assets/arboles/cristobal.jpg"
+  },
+  {
+    "id": 4,
+    "nombreComun": "Guayacán",
+    "nombreCientifico": "Tabebuia guayacan",
+    "problematica": "Tala Ilegal en la Zona Norte",
+    "zona": "Sarapiquí y San Carlos",
+    "descripcion": "Árbol de madera extremadamente dura y resistente a la intemperie. Su floración amarilla es característica.",
+    "usos": [
+      "Postes y durmientes",
+      "Construcción pesada",
+      "Tornillos y ruedas hidráulicas"
+    ],
+    "estado": "Casi amenazado",
+    "imagen": "assets/arboles/guayacan.jpg"
+  },
+  {
+    "id": 5,
+    "nombreComun": "Pochote",
+    "nombreCientifico": "Bombacopsis quinata",
+    "problematica": "Expansión Agrícola en Guanacaste",
+    "zona": "Guanacaste",
+    "descripcion": "Árbol característico del bosque seco tropical, de tronco espinoso y madera liviana pero resistente.",
+    "usos": [
+      "Madera liviana para carpintería",
+      "Cajas y embalajes",
+      "Fósforos"
+    ],
+    "estado": "Vulnerable",
+    "imagen": "assets/arboles/pochote.jpg"
+  },
+  {
+    "id": 6,
+    "nombreComun": "Tempisque",
+    "nombreCientifico": "Sideroxylon capiri",
+    "problematica": "Expansión Agrícola en Guanacaste",
+    "zona": "Guanacaste",
+    "descripcion": "Árbol de madera extremadamente dura y pesada, utilizada históricamente para ruedas de carretas y construcciones.",
+    "usos": [
+      "Ruedas de carreta",
+      "Construcción pesada",
+      "Leña de alta calidad"
+    ],
+    "estado": "En peligro",
+    "imagen": "assets/arboles/tempisque.jpg"
+  },
+  {
+    "id": 7,
+    "nombreComun": "Guapinol",
+    "nombreCientifico": "Hymenaea courbaril",
+    "problematica": "Expansión Agrícola en Guanacaste",
+    "zona": "Guanacaste",
+    "descripcion": "Árbol imponente del bosque seco, produce una resina llamada 'copal' utilizada desde tiempos precolombinos.",
+    "usos": [
+      "Construcción pesada",
+      "Muebles rústicos",
+      "Resina (copal) para barnices"
+    ],
+    "estado": "Vulnerable",
+    "imagen": "assets/arboles/guapinol.jpg"
+  },
+  {
+    "id": 8,
+    "nombreComun": "Cocobolo",
+    "nombreCientifico": "Dalbergia retusa",
+    "problematica": "Expansión Agrícola en Guanacaste",
+    "zona": "Guanacaste",
+    "descripcion": "Árbol de madera preciosa de color rojizo con vetas oscuras. Es una de las maderas más cotizadas del mundo.",
+    "usos": [
+      "Artesanía fina",
+      "Mangos de cuchillería",
+      "Instrumentos musicales (marimbas)"
+    ],
+    "estado": "En peligro crítico",
+    "imagen": "assets/arboles/cocobolo.jpg"
+  },
+  {
+    "id": 9,
+    "nombreComun": "Roble Sabana",
+    "nombreCientifico": "Tabebuia rosea",
+    "problematica": "Deforestación Urbana en el Valle Central",
+    "zona": "Valle Central",
+    "descripcion": "Árbol de hermosas flores rosadas, muy utilizado en la arborización urbana del Valle Central.",
+    "usos": [
+      "Arborización urbana",
+      "Madera para muebles",
+      "Sombrío en potreros"
+    ],
+    "estado": "Casi amenazado",
+    "imagen": "assets/arboles/roble-sabana.jpg"
+  },
+  {
+    "id": 10,
+    "nombreComun": "Cortez Negro",
+    "nombreCientifico": "Tabebuia impetiginosa",
+    "problematica": "Deforestación Urbana en el Valle Central",
+    "zona": "Valle Central",
+    "descripcion": "Árbol de flores rosado-moradas y madera muy durable, característico de los bosques del Valle Central.",
+    "usos": [
+      "Madera para construcción",
+      "Postes",
+      "Arborización ornamental"
+    ],
+    "estado": "Vulnerable",
+    "imagen": "assets/arboles/cortez-negro.jpg"
+  },
+  {
+    "id": 11,
+    "nombreComun": "Poro",
+    "nombreCientifico": "Erythrina poeppigiana",
+    "problematica": "Deforestación Urbana en el Valle Central",
+    "zona": "Valle Central",
+    "descripcion": "Árbol de flores rojas intensas, utilizado tradicionalmente como sombra en cafetales y sistemas agroforestales.",
+    "usos": [
+      "Sombra para cafetales",
+      "Cercas vivas",
+      "Ornato urbano"
+    ],
+    "estado": "Preocupación menor",
+    "imagen": "assets/arboles/poro.jpg"
+  },
+  {
+    "id": 12,
+    "nombreComun": "Mango",
+    "nombreCientifico": "Mangifera indica",
+    "problematica": "Deforestación Urbana en el Valle Central",
+    "zona": "Valle Central",
+    "descripcion": "Árbol frutal introducido, ampliamente cultivado en Costa Rica. Forma parte del paisaje del Valle Central.",
+    "usos": [
+      "Fruta",
+      "Sombra",
+      "Madera para embalajes"
+    ],
+    "estado": "No amenazado",
+    "imagen": "assets/arboles/mango.jpg"
+  },
+  {
+    "id": 13,
+    "nombreComun": "Gallinazo",
+    "nombreCientifico": "Schizolobium parahyba",
+    "problematica": "Minería y Desarrollo en la Zona Sur",
+    "zona": "Golfito, Osa, Corredores",
+    "descripcion": "Árbol de crecimiento muy rápido, usado en reforestación. La minería ilegal afecta sus poblaciones en Osa.",
+    "usos": [
+      "Reforestación",
+      "Madera para palillos",
+      "Pulpa de papel"
+    ],
+    "estado": "Preocupación menor",
+    "imagen": "assets/arboles/gallinazo.jpg"
+  },
+  {
+    "id": 14,
+    "nombreComun": "Gavilán",
+    "nombreCientifico": "Pentaclethra macroloba",
+    "problematica": "Minería y Desarrollo en la Zona Sur",
+    "zona": "Golfito, Osa, Corredores",
+    "descripcion": "Árbol muy abundante en los bosques lluviosos de Osa. La minería ilegal ha contaminado los ríos donde crece.",
+    "usos": [
+      "Construcción rural",
+      "Leña",
+      "Postes"
+    ],
+    "estado": "Preocupación menor",
+    "imagen": "assets/arboles/gavilan.webp"
+  },
+  {
+    "id": 15,
+    "nombreComun": "Sándalo",
+    "nombreCientifico": "Myroxylon balsamum",
+    "problematica": "Minería y Desarrollo en la Zona Sur",
+    "zona": "Golfito, Osa, Corredores",
+    "descripcion": "Árbol de madera aromática, utilizado en perfumería y medicina tradicional. En riesgo por minería ilegal.",
+    "usos": [
+      "Perfumería",
+      "Medicina tradicional",
+      "Madera fina"
+    ],
+    "estado": "Vulnerable",
+    "imagen": "assets/arboles/sandalo.jpg"
+  },
+  {
+    "id": 16,
+    "nombreComun": "Nazareno",
+    "nombreCientifico": "Peltogyne purpurea",
+    "problematica": "Minería y Desarrollo en la Zona Sur",
+    "zona": "Golfito, Osa, Corredores",
+    "descripcion": "Árbol de madera morada, una de las más hermosas del mundo. Objetivo de tala ilegal en la Península de Osa.",
+    "usos": [
+      "Artesanía fina",
+      "Ebanistería de lujo",
+      "Instrumentos musicales"
+    ],
+    "estado": "En peligro crítico",
+    "imagen": "assets/arboles/nazareno.jpg"
+  }
 ]

@@ -12,7 +12,7 @@ function filtrar() {
   var cards = contenedor.querySelectorAll('.cards');
   var count = 0;
 
-  cards.forEach(function(card) {
+  cards.forEach(function (card) {
     var texto = limpiarTilde(card.textContent);
     if (!termino || texto.indexOf(termino) !== -1) {
       card.classList.remove('hidden');
@@ -35,12 +35,12 @@ function filtrar() {
 searchInput.addEventListener('keyup', filtrar);
 
 fetch('jsonData/problematicas.json')
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
+  .then(function (r) { return r.json(); })
+  .then(function (data) {
     problemData = data;
 
-    data.forEach(function(p) {
-      var especies = p.especiesAfectadas.map(function(e) { return '<li>' + e + '</li>'; }).join('');
+    data.forEach(function (p) {
+      var especies = p.especiesAfectadas.map(function (e) { return '<li>' + e + '</li>'; }).join('');
 
       var card = document.createElement('div');
       card.className = 'cards card-problem';
@@ -54,20 +54,20 @@ fetch('jsonData/problematicas.json')
         '<p><strong>Especies afectadas:</strong></p>' +
         '<ul class="specie-list">' + especies + '</ul>' +
         '<div class="actions">' +
-          '<button class="btn btn-info" data-id="' + p.id + '">Más información</button>' +
-          '<button class="btn btn-insc" data-id="' + p.id + '">Inscripción</button>' +
+        '<button class="btn btn-info" data-id="' + p.id + '">Más información</button>' +
+        '<button class="btn btn-insc" data-id="' + p.id + '">Inscripción</button>' +
         '</div>';
 
       contenedor.appendChild(card);
     });
   });
 
-contenedor.addEventListener('click', function(e) {
+contenedor.addEventListener('click', function (e) {
   var target = e.target.closest('button');
   if (!target) return;
 
   var id = parseInt(target.getAttribute('data-id'));
-  var prob = problemData.find(function(p) { return p.id === id; });
+  var prob = problemData.find(function (p) { return p.id === id; });
   if (!prob) return;
 
   if (target.classList.contains('btn-info')) {
@@ -80,16 +80,16 @@ contenedor.addEventListener('click', function(e) {
         '<p style="text-align:left"><strong>Descripción:</strong> ' + prob.descripcion + '</p>' +
         '<hr>' +
         '<p style="text-align:left"><strong>Causas:</strong></p>' +
-        '<ul style="text-align:left">' + prob.causas.map(function(c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
+        '<ul style="text-align:left">' + prob.causas.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
         '<hr>' +
         '<p style="text-align:left"><strong>Consecuencias:</strong></p>' +
-        '<ul style="text-align:left">' + prob.consecuencias.map(function(c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
+        '<ul style="text-align:left">' + prob.consecuencias.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>' +
         '<hr>' +
         '<p style="text-align:left"><strong>Especies afectadas:</strong></p>' +
-        '<ul style="text-align:left">' + prob.especiesAfectadas.map(function(e) { return '<li>' + e + '</li>'; }).join('') + '</ul>' +
+        '<ul style="text-align:left">' + prob.especiesAfectadas.map(function (e) { return '<li>' + e + '</li>'; }).join('') + '</ul>' +
         '<hr>' +
         '<p style="text-align:left"><strong>Soluciones propuestas:</strong></p>' +
-        '<ul style="text-align:left">' + prob.soluciones.map(function(s) { return '<li>' + s + '</li>'; }).join('') + '</ul>',
+        '<ul style="text-align:left">' + prob.soluciones.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ul>',
       icon: 'info',
       confirmButtonText: 'Cerrar',
       confirmButtonColor: '#1b4332',
@@ -106,7 +106,7 @@ contenedor.addEventListener('click', function(e) {
       style: { background: '#1b4332' }
     }).showToast();
 
-    setTimeout(function() {
+    setTimeout(function () {
       window.location.href = 'inscripcionUsuarios.html?problematica=' + id;
     }, 1500);
   }

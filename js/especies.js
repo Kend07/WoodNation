@@ -12,7 +12,7 @@ function filtrar() {
   var cards = contenedor.querySelectorAll('.cards');
   var count = 0;
 
-  cards.forEach(function(card) {
+  cards.forEach(function (card) {
     var texto = limpiarTilde(card.textContent);
     if (!termino || texto.indexOf(termino) !== -1) {
       card.classList.remove('hidden');
@@ -35,11 +35,11 @@ function filtrar() {
 searchInput.addEventListener('keyup', filtrar);
 
 fetch('jsonData/especies.json')
-  .then(function(r) { return r.json(); })
-  .then(function(data) {
+  .then(function (r) { return r.json(); })
+  .then(function (data) {
     especiesData = data;
 
-    data.forEach(function(e) {
+    data.forEach(function (e) {
       var card = document.createElement('div');
       card.className = 'cards card-problem';
       card.setAttribute('data-aos', 'fade-up');
@@ -51,19 +51,19 @@ fetch('jsonData/especies.json')
         '<p class="zone-label"><strong>Problemática:</strong> ' + e.problematica + '</p>' +
         '<p class="zone-label"><strong>Zona:</strong> ' + e.zona + '</p>' +
         '<div class="actions">' +
-          '<button class="btn btn-info" data-id="' + e.id + '">Más información</button>' +
+        '<button class="btn btn-info" data-id="' + e.id + '">Más información</button>' +
         '</div>';
 
       contenedor.appendChild(card);
     });
   });
 
-contenedor.addEventListener('click', function(e) {
+contenedor.addEventListener('click', function (e) {
   var target = e.target.closest('button');
   if (!target) return;
 
   var id = parseInt(target.getAttribute('data-id'));
-  var esp = especiesData.find(function(e) { return e.id === id; });
+  var esp = especiesData.find(function (e) { return e.id === id; });
   if (!esp) return;
 
   Swal.fire({
@@ -77,7 +77,7 @@ contenedor.addEventListener('click', function(e) {
       '<p style="text-align:left">' + esp.descripcion + '</p>' +
       '<hr>' +
       '<p style="text-align:left"><strong>Usos:</strong></p>' +
-      '<ul style="text-align:left">' + esp.usos.map(function(u) { return '<li>' + u + '</li>'; }).join('') + '</ul>',
+      '<ul style="text-align:left">' + esp.usos.map(function (u) { return '<li>' + u + '</li>'; }).join('') + '</ul>',
     icon: 'info',
     confirmButtonText: 'Cerrar',
     confirmButtonColor: '#1B4332',
