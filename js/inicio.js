@@ -1,17 +1,11 @@
-// ============================================================
-// inicio.js — WoodNation
-// Carga las zonas afectadas desde problematicas.json y
-// maneja la interacción del botón de estadísticas.
-// ============================================================
-
-// ---------- INDICADOR DE PÁGINA ACTIVA ----------
+// Marca el enlace activo en el menú según la página actual
 document.querySelectorAll('.menu a').forEach(function (enlace) {
   if (enlace.href === window.location.href) {
     enlace.classList.add('activo');
   }
 });
 
-// ---------- CARGA DE ZONAS DESDE JSON ----------
+// Carga las zonas afectadas desde el JSON y genera las tarjetas
 fetch('data/problematicas.json')
   .then(function (r) { return r.json(); })
   .then(function (data) {
@@ -33,7 +27,7 @@ fetch('data/problematicas.json')
     });
   });
 
-// ---------- INTERACCIÓN: BOTÓN VER ESTADÍSTICAS ----------
+// Botón que muestra u oculta la sección de estadísticas
 var btnEstadisticas = document.getElementById('btn-estadisticas');
 var seccionEstadisticas = document.getElementById('seccion-estadisticas');
 
