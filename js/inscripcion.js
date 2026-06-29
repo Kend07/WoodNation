@@ -2,6 +2,7 @@ var datosProblematicas = [];
 var problemaId = null;
 var seleccionarProblematica = document.getElementById('problematica');
 
+// Muestra la tarjeta de vista previa al seleccionar una problemática
 function mostrarPreview(id) {
   var contenedor = document.getElementById('preview-card');
   var prob = datosProblematicas.find(function (p) { return p.id == id; });
@@ -26,6 +27,7 @@ seleccionarProblematica.addEventListener('change', function () {
   mostrarPreview(this.value);
 });
 
+// Muestra u oculta el mensaje de error debajo de un campo
 function mostrarError(id, mensaje) {
   var campo = document.getElementById(id);
   var span = document.getElementById('error-' + id);
@@ -41,6 +43,7 @@ function mostrarError(id, mensaje) {
   }
 }
 
+// Valida un campo específico según su id
 function validarCampo(id) {
   var campo = document.getElementById(id);
   var valor = campo.value.trim();
@@ -79,7 +82,7 @@ function validarCampo(id) {
   }
 }
 
-// Escuchar cambios en cada campo para validar en tiempo real
+// Valida en tiempo real mientras el usuario interactúa con cada campo
 ['nombre', 'correo', 'provincia', 'problematica', 'contribucion', 'fecha'].forEach(function (id) {
   var campo = document.getElementById(id);
   if (campo) {
@@ -89,10 +92,10 @@ function validarCampo(id) {
   }
 });
 
+// Envío del formulario — valida todo antes de guardar en localStorage
 document.getElementById('form-inscripcion').addEventListener('submit', function (e) {
   e.preventDefault();
 
-  // Validar todos los campos antes de guardar
   var camposObligatorios = ['nombre', 'correo', 'provincia', 'problematica', 'contribucion', 'fecha'];
   var hayError = false;
 
@@ -143,6 +146,7 @@ document.getElementById('form-inscripcion').addEventListener('submit', function 
   cargarRegistros();
 });
 
+// Lee el localStorage y muestra los registros guardados
 function cargarRegistros() {
   var contenedorRegistros = document.getElementById('contenedor-registros');
   var registros = JSON.parse(localStorage.getItem('woodnation_inscripciones') || '[]');
@@ -174,7 +178,7 @@ function cargarRegistros() {
       var id = parseInt(this.getAttribute('data-id'));
       Swal.fire({
         title: '¿Desea eliminar su inscripción?',
-        text: 'No podrá retroceder despues de su acción.',
+        text: 'No podrá retroceder después de su acción.',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Sí, seguro',
@@ -200,6 +204,7 @@ function cargarRegistros() {
   });
 }
 
+// Elimina todas las inscripciones con confirmación
 function limpiarTodosLosRegistros() {
   Swal.fire({
     title: '¿Eliminar todas las inscripciones?',
@@ -230,6 +235,7 @@ if (btnLimpiar) {
   btnLimpiar.addEventListener('click', limpiarTodosLosRegistros);
 }
 
+// Carga las problemáticas desde el JSON y llena el select del formulario
 fetch('data/problematicas.json')
   .then(function (r) { return r.json(); })
   .then(function (data) {
@@ -242,6 +248,7 @@ fetch('data/problematicas.json')
       seleccionarProblematica.appendChild(opcion);
     });
 
+    // Si viene con parámetro en la URL, preselecciona la problemática
     var parametros = new URLSearchParams(window.location.search);
     problemaId = parametros.get('problematica');
     if (problemaId) {
