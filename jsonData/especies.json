@@ -12,7 +12,7 @@
       "Carpintería en general"
     ],
     "estado": "Vulnerable",
-    "imagen": "assets/arboles/cedro-amargo.png"
+    "imagen": "assets/images/arboles/cedro-amargo.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Construcción naval"
     ],
     "estado": "En peligro",
-    "imagen": "assets/arboles/caoba.jpg"
+    "imagen": "assets/images/arboles/caoba.jpg"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Construcción rural"
     ],
     "estado": "Vulnerable",
-    "imagen": "assets/arboles/cristobal.jpg"
+    "imagen": "assets/images/arboles/cristobal.jpg"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "Tornillos y ruedas hidráulicas"
     ],
     "estado": "Casi amenazado",
-    "imagen": "assets/arboles/guayacan.jpg"
+    "imagen": "assets/images/arboles/guayacan.jpg"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "Fósforos"
     ],
     "estado": "Vulnerable",
-    "imagen": "assets/arboles/pochote.jpg"
+    "imagen": "assets/images/arboles/pochote.jpg"
   },
   {
     "id": 6,
@@ -87,7 +87,7 @@
       "Leña de alta calidad"
     ],
     "estado": "En peligro",
-    "imagen": "assets/arboles/tempisque.jpg"
+    "imagen": "assets/images/arboles/tempisque.jpg"
   },
   {
     "id": 7,
@@ -102,7 +102,7 @@
       "Resina (copal) para barnices"
     ],
     "estado": "Vulnerable",
-    "imagen": "assets/arboles/guapinol.jpg"
+    "imagen": "assets/images/arboles/guapinol.jpg"
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
       "Instrumentos musicales (marimbas)"
     ],
     "estado": "En peligro crítico",
-    "imagen": "assets/arboles/cocobolo.jpg"
+    "imagen": "assets/images/arboles/cocobolo.jpg"
   },
   {
     "id": 9,
@@ -132,7 +132,7 @@
       "Sombrío en potreros"
     ],
     "estado": "Casi amenazado",
-    "imagen": "assets/arboles/roble-sabana.jpg"
+    "imagen": "assets/images/arboles/roble-sabana.jpg"
   },
   {
     "id": 10,
@@ -147,7 +147,7 @@
       "Arborización ornamental"
     ],
     "estado": "Vulnerable",
-    "imagen": "assets/arboles/cortez-negro.jpg"
+    "imagen": "assets/images/arboles/cortez-negro.jpg"
   },
   {
     "id": 11,
@@ -162,7 +162,7 @@
       "Ornato urbano"
     ],
     "estado": "Preocupación menor",
-    "imagen": "assets/arboles/poro.jpg"
+    "imagen": "assets/images/arboles/poro.jpg"
   },
   {
     "id": 12,
@@ -177,7 +177,7 @@
       "Madera para embalajes"
     ],
     "estado": "No amenazado",
-    "imagen": "assets/arboles/mango.jpg"
+    "imagen": "assets/images/arboles/mango.jpg"
   },
   {
     "id": 13,
@@ -192,7 +192,7 @@
       "Pulpa de papel"
     ],
     "estado": "Preocupación menor",
-    "imagen": "assets/arboles/gallinazo.jpg"
+    "imagen": "assets/images/arboles/gallinazo.jpg"
   },
   {
     "id": 14,
@@ -207,7 +207,7 @@
       "Postes"
     ],
     "estado": "Preocupación menor",
-    "imagen": "assets/arboles/gavilan.webp"
+    "imagen": "assets/images/arboles/gavilan.webp"
   },
   {
     "id": 15,
@@ -222,7 +222,7 @@
       "Madera fina"
     ],
     "estado": "Vulnerable",
-    "imagen": "assets/arboles/sandalo.jpg"
+    "imagen": "assets/images/arboles/sandalo.jpg"
   },
   {
     "id": 16,
@@ -237,6 +237,6 @@
       "Instrumentos musicales"
     ],
     "estado": "En peligro crítico",
-    "imagen": "assets/arboles/nazareno.jpg"
+    "imagen": "assets/images/arboles/nazareno.jpg"
   }
 ]
