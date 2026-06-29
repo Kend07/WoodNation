@@ -1,4 +1,5 @@
 var datosProblematicas = [];
+var problemaId = null;
 var seleccionarProblematica = document.getElementById('problematica');
 
 function mostrarPreview(id) {
@@ -113,7 +114,7 @@ function cargarRegistros() {
   });
 }
 
-fetch('jsonData/problematicas.json')
+fetch('data/problematicas.json')
   .then(function (r) { return r.json(); })
   .then(function (data) {
     datosProblematicas = data;
@@ -126,7 +127,7 @@ fetch('jsonData/problematicas.json')
     });
 
     var parametros = new URLSearchParams(window.location.search);
-    var problemaId = parametros.get('problematica');
+    problemaId = parametros.get('problematica');
     if (problemaId) {
       seleccionarProblematica.value = problemaId;
       mostrarPreview(problemaId);
