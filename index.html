@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WoodNation | Inicio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -53,48 +53,77 @@
     </section>
 
     <section class="section light-background" data-aos="fade-up">
-      <h2>Zonas más afectadas</h2>
-      <div class="card">
-        <div class="cards" data-aos="zoom-in" data-aos-delay="100">
-          <h3>Zona Norte</h3>
-          <p>Sarapiquí y San Carlos. Tala ilegal de cedro, caoba y cristóbal. Corredores biológicos fragmentados.</p>
-        </div>
-        <div class="cards" data-aos="zoom-in" data-aos-delay="200">
-          <h3>Guanacaste</h3>
-          <p>Expansión agrícola y ganadera. Ha perdido el 65% del bosque seco tropical original.</p>
-        </div>
-        <div class="cards" data-aos="zoom-in" data-aos-delay="300">
-          <h3>Valle Central</h3>
-          <p>Crecimiento urbano descontrolado. Eliminación de bosque urbano y periurbano.</p>
-        </div>
-        <div class="cards" data-aos="zoom-in" data-aos-delay="400">
-          <h3>Zona Sur</h3>
-          <p>Osa y Golfito. Minería ilegal y turismo no regulado amenazan el bosque lluvioso.</p>
-        </div>
+  <h2>¿A quién va dirigido WoodNation?</h2>
+  <div class="content-text">
+    <p>WoodNation está dirigido a cualquier persona que quiera informarse y actuar frente a la deforestación en Costa Rica:</p>
+    <div class="card" style="margin-top: 24px;">
+      <div class="cards" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Ciudadanía general</h3>
+        <p>Personas que desean informarse sobre las zonas y especies en riesgo y contribuir a la reforestación.</p>
       </div>
-    </section>
+      <div class="cards" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Estudiantes</h3>
+        <p>Estudiantes de todos los niveles que buscan información clara sobre el estado de los bosques.</p>
+      </div>
+      <div class="cards" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Organizaciones</h3>
+        <p>Comunidades y organizaciones ambientales que impulsan campañas de reforestación.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="section" data-aos="fade-up">
-      <h2>Estadísticas clave</h2>
-      <div class="card">
-        <div class="cards" data-aos="flip-left">
-          <span class="number">21%</span>
-          <p>Cobertura forestal en 1987, el punto más bajo de la historia.</p>
-        </div>
-        <div class="cards" data-aos="flip-left" data-aos-delay="150">
-          <span class="number">57%</span>
-          <p>Cobertura forestal actual, una recuperación notable pero insuficiente.</p>
-        </div>
-        <div class="cards" data-aos="flip-left" data-aos-delay="300">
-          <span class="number">35%</span>
-          <p>De las denuncias ambientales en Costa Rica son por tala ilegal.</p>
-        </div>
-        <div class="cards" data-aos="flip-left" data-aos-delay="450">
-          <span class="number">25%</span>
-          <p>Del territorio está bajo alguna figura de protección o área silvestre.</p>
-        </div>
+  <h2>Zonas más afectadas</h2>
+  <p class="subtitle">Información cargada dinámicamente desde nuestra base de datos de problemáticas.</p>
+  <div id="contenedor-zonas" class="card"></div>
+</section>
+
+<section class="section light-background" data-aos="fade-up">
+  <h2>Estadísticas clave</h2>
+  <div class="center" style="margin-bottom: 24px;">
+    <button id="btn-estadisticas" class="btn">Ver estadísticas</button>
+  </div>
+  <div id="seccion-estadisticas" class="card hidden">
+    <div class="cards">
+      <span class="number">21%</span>
+      <p>Cobertura forestal en 1987, el punto más bajo de la historia.</p>
+    </div>
+    <div class="cards">
+      <span class="number">57%</span>
+      <p>Cobertura forestal actual, una recuperación notable pero insuficiente.</p>
+    </div>
+    <div class="cards">
+      <span class="number">35%</span>
+      <p>De las denuncias ambientales en Costa Rica son por tala ilegal.</p>
+    </div>
+    <div class="cards">
+      <span class="number">25%</span>
+      <p>Del territorio está bajo alguna figura de protección o área silvestre.</p>
+    </div>
+  </div>
+</section>
+
+    <section class="section light-background" data-aos="fade-up">
+  <h2>¿A quién va dirigido WoodNation?</h2>
+  <div class="content-text">
+    <p>WoodNation está dirigido a cualquier persona que quiera informarse y actuar frente a la deforestación en Costa Rica:</p>
+    <div class="card" style="margin-top: 24px;">
+      <div class="cards" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Ciudadanía general</h3>
+        <p>Personas que desean informarse sobre las zonas y especies en riesgo y contribuir a la reforestación.</p>
       </div>
-    </section>
+      <div class="cards" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Estudiantes</h3>
+        <p>Estudiantes de todos los niveles que buscan información clara sobre el estado de los bosques.</p>
+      </div>
+      <div class="cards" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Organizaciones</h3>
+        <p>Comunidades y organizaciones ambientales que impulsan campañas de reforestación.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="section light-background" data-aos="fade-up">
       <h2>Soluciones y cómo ayudar</h2>
@@ -124,6 +153,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>AOS.init({ duration: 800 });</script>
+  <script src="js/inicio.js"></script>
 </body>
 
 </html>
