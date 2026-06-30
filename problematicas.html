@@ -6,10 +6,11 @@
   <title>WoodNation | Problemáticas</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- Barra de navegación superior -->
   <header class="header">
     <a href="index.html" class="logo">WoodNation</a>
     <nav class="menu">
@@ -24,10 +25,14 @@
     <section class="section" data-aos="fade-up">
       <h2>Problemáticas de deforestación en Costa Rica</h2>
       <p class="subtitle">
-        Las tarjeta representan las principales problemáticas presentes en el paíæ. Haz clic en
-        "Más información" para conocer mas detalles, o en "Inscripción" para inscribirte y apoyar.
+        Las tarjetas representan las principales problemáticas presentes en el país. Haz clic en
+        "Más información" para conocer más detalles, o en "Inscripción" para inscribirte y apoyar.
       </p>
+
+      <!-- Buscador de texto -->
       <input type="text" id="search-problemas" class="search-input" placeholder="Buscar por nombre, zona, provincia, especie...">
+
+      <!-- Las tarjetas las genera problematicas.js desde el JSON -->
       <div id="contenedor-cards" class="card"></div>
       <p id="no-results-problemas" class="empty hidden">No se encontraron problemáticas con ese filtro.</p>
     </section>
