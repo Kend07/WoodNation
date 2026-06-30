@@ -1,3 +1,4 @@
+// Marca el enlace activo en el menú según la página actual
 document.querySelectorAll('.menu a').forEach(function (enlace) {
   if (enlace.href === window.location.href) {
     enlace.classList.add('activo');
@@ -9,10 +10,12 @@ var contenedor = document.getElementById('contenedor-cards');
 var searchInput = document.getElementById('search-problemas');
 var noResults = document.getElementById('no-results-problemas');
 
+// Quita tildes para que la búsqueda funcione sin importar acentos
 function limpiarTilde(str) {
   return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
 
+// Filtra las tarjetas según lo que escribe el usuario
 function filtrar() {
   var termino = limpiarTilde(searchInput.value);
   var cards = contenedor.querySelectorAll('.cards');
@@ -40,6 +43,7 @@ function filtrar() {
 
 searchInput.addEventListener('keyup', filtrar);
 
+// Carga las problemáticas desde el JSON y genera las tarjetas
 fetch('data/problematicas.json')
   .then(function (r) { return r.json(); })
   .then(function (data) {
@@ -68,6 +72,7 @@ fetch('data/problematicas.json')
     });
   });
 
+// Maneja los clics en los botones de cada tarjeta
 contenedor.addEventListener('click', function (e) {
   var target = e.target.closest('button');
   if (!target) return;
@@ -76,6 +81,7 @@ contenedor.addEventListener('click', function (e) {
   var prob = problemData.find(function (p) { return p.id === id; });
   if (!prob) return;
 
+  // Abre el modal con el detalle completo de la problemática
   if (target.classList.contains('btn-info')) {
     Swal.fire({
       title: prob.nombre,
@@ -103,6 +109,7 @@ contenedor.addEventListener('click', function (e) {
     });
   }
 
+  // Redirige al formulario de inscripción con la problemática preseleccionada
   if (target.classList.contains('btn-insc')) {
     Toastify({
       text: 'Redirigiendo al formulario de inscripción...',
