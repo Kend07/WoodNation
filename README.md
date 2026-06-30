@@ -32,7 +32,7 @@ El nombre elegido para nuestra página web es WoodNation, el nombre busca foment
 
 - **Total de tareas:** 12
 - **Completadas:** 12 ✅
-- **Pendientes:** 0 🎉
+> **Pendientes:** 0 🎉
 
 
 
