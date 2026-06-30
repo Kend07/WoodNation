@@ -1,5 +1,5 @@
 // Marca el enlace activo en el menú según la página actual
-document.querySelectorAll('.menu a').forEach(function (enlace) {
+document.querySelectorAll('.menu .btn').forEach(function (enlace) {
   if (enlace.href === window.location.href) {
     enlace.classList.add('activo');
   }
