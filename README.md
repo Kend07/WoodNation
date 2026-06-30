@@ -71,4 +71,4 @@ El usuario podrá buscar, filtrar y buscar información de cada especie por tipo
 Esta página tiene como propósito el manejo de formularios, los cuales permitirán registrar compromisos o actividades de reforestación por parte de los usuarios
 El formulario solicitará información de los participantes, como su nombre, provincia en la que reside, contribución realizada, fecha, entre otros datos importantes.
 Asimismo, este apartado contendrá las posibles contribuciones que los usuarios pueden realizar y/o participar.
-Los usuarios podrán registrar nuevas actividades, visualizar registros almacenados previamente y eliminar registros existentes. Se utilizará localStorage para almacenar ciertos datos relacionados con los formularios.
+Los usuarios podrán visualizar registros almacenados previamente y eliminar registros existentes. Se utilizará localStorage para almacenar ciertos datos relacionados con los formularios.
