@@ -12,6 +12,7 @@
 
 <body>
 
+  <!-- Barra de navegación superior -->
   <header class="header">
     <a href="index.html" class="logo">WoodNation</a>
     <nav class="menu">
@@ -29,8 +30,12 @@
         Listado de todas las especies de árboles afectadas por la deforestación en Costa Rica.
         Usá el buscador y los filtros para encontrar una especie específica.
       </p>
+
+      <!-- Buscador de texto -->
       <input type="text" id="search-especies" class="search-input"
         placeholder="Buscar por nombre común, científico, problemática, zona...">
+
+      <!-- Filtros por zona y estado de conservación — las zonas se llenan desde el JSON -->
       <div class="filtros">
         <select id="filtro-zona" class="search-input" style="max-width: 260px;">
           <option value="">Todas las zonas</option>
@@ -45,6 +50,8 @@
           <option value="No amenazado">No amenazado</option>
         </select>
       </div>
+
+      <!-- Las tarjetas de especies las genera especies.js desde el JSON -->
       <div id="contenedor-especies" class="card"></div>
       <p id="no-results-especies" class="empty hidden">No se encontraron especies con ese filtro.</p>
     </section>
