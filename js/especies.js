@@ -1,3 +1,12 @@
+// Marca el enlace activo en el menú según la página actual
+document.querySelectorAll('.menu .btn').forEach(function (enlace) {
+  var currentPath = window.location.pathname.replace(/\/+$/, '');
+  var linkPath = new URL(enlace.href).pathname.replace(/\/+$/, '');
+  if (currentPath === linkPath) {
+    enlace.classList.add('activo');
+  }
+});
+
 var especiesData = [];
 var contenedor = document.getElementById('contenedor-especies');
 var searchInput = document.getElementById('search-especies');
@@ -80,6 +89,9 @@ fetch('data/especies.json')
 
       contenedor.appendChild(card);
     });
+  })
+  .catch(function () {
+    contenedor.innerHTML = '<p class="empty">Error al cargar las especies. Intente de nuevo más tarde.</p>';
   });
 
 // Abre el modal con el detalle completo de la especie

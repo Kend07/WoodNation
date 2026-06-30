@@ -1,3 +1,12 @@
+// Marca el enlace activo en el menú según la página actual
+document.querySelectorAll('.menu .btn').forEach(function (enlace) {
+  var currentPath = window.location.pathname.replace(/\/+$/, '');
+  var linkPath = new URL(enlace.href).pathname.replace(/\/+$/, '');
+  if (currentPath === linkPath) {
+    enlace.classList.add('activo');
+  }
+});
+
 var datosProblematicas = [];
 var problemaId = null;
 var seleccionarProblematica = document.getElementById('problematica');
@@ -262,4 +271,12 @@ fetch('data/problematicas.json')
     }
 
     cargarRegistros();
+  })
+  .catch(function () {
+    var el = document.getElementById('problematica');
+    if (el) {
+      var op = document.createElement('option');
+      op.textContent = 'Error al cargar problemáticas';
+      el.appendChild(op);
+    }
   });

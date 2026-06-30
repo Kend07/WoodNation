@@ -1,6 +1,8 @@
 // Marca el enlace activo en el menú según la página actual
 document.querySelectorAll('.menu .btn').forEach(function (enlace) {
-  if (enlace.href === window.location.href) {
+  var currentPath = window.location.pathname.replace(/\/+$/, '');
+  var linkPath = new URL(enlace.href).pathname.replace(/\/+$/, '');
+  if (currentPath === linkPath) {
     enlace.classList.add('activo');
   }
 });
@@ -70,6 +72,9 @@ fetch('data/problematicas.json')
 
       contenedor.appendChild(card);
     });
+  })
+  .catch(function () {
+    contenedor.innerHTML = '<p class="empty">Error al cargar las problemáticas. Intente de nuevo más tarde.</p>';
   });
 
 // Maneja los clics en los botones de cada tarjeta
